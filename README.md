@@ -69,7 +69,7 @@ To get started with creating and minting SPL tokens, follow these steps:
 
 - **Use the Rugpull feature to pull the liquidity in the time given during the prompts. Ideal value would be 120-300s (2-5mins). If you don't wish to rugpull, then set the value as 0.**
 
-- **Make sure you are on the mainnet while creating the token & have enough SOL to cover the fee for token creation, LP addition, Mint, etc. Setting value to 0 for Mint, Renounced, Burn will not include any charges.**
+- **Make sure you are on the mainnet while creating the token & have enough SOL (Min 2 SOL) to cover the fee for token creation, LP addition, Mint, etc. Else, you may lose the transaction fee for the already completed transactions & might get error as your wallet doesn't have enough balance to proceed further. Setting value to 0 for Mint, Renounced, Burn will not include any charges.** 
 
 - **Cost of adding the Liquidity is upon the user, you can choose to add 5 SOL or 50 SOL, it's upto you. Recommended min LP size is 5 SOL for 50-80% supply. Make sure to have equivalent SOL in your wallet, else the transaction will fail.**
 
@@ -97,6 +97,12 @@ To get started with creating and minting SPL tokens, follow these steps:
 <br></br>
 <img width="910" alt="image" src="https://github.com/WhiskerWise/whiskerwise.github.io/assets/156570174/82a9637a-a7f2-4be6-ba12-6cf0f7c790c0">
 <br></br>
+
+**If you face error during npm start, try the below command:**
+
+```bash
+   npm install --save @solana/web3.js
+   ```
 
 # DISCLAIMER
 
